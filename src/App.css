@@ -14,10 +14,10 @@
 
 .circle-background {
   stroke: #2D2E5F;
+  stroke-linecap: round;
 }
 
 .circle-progress {
-  /* stroke: red; */
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -25,6 +25,12 @@
 .circle-text {
   font-size: 3em;
   font-weight: bold;
-  /* fill: red; */
+  color: red;
+  background: red;
 }
+
+
+
+
+
 
