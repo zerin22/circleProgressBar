@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CircularProgressBar from './CircularProgressBar';
+import HalfCircularProgressBar from './HalfCircularProgressBar';
 
 const Bar = () => {
    
@@ -11,7 +11,7 @@ const Bar = () => {
         return (
             <div>
                 <div style={{ marginLeft: '100px' }}>
-                    <CircularProgressBar strokeWidth="10" sqSize="400" percentage={percentage} />
+                    <HalfCircularProgressBar strokeWidth="10" sqSize="400" percentage={percentage} />
                     <div>
                         <input
                             id="progressInput"
