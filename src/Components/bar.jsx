@@ -3,26 +3,16 @@ import HalfCircularProgressBar from './HalfCircularProgressBar';
 
 const Bar = () => {
    
-        const [percentage, setPercentage] = useState(25);
+        const [percentage, setPercentage] = useState(10);
 
         const handleChangeEvent = (event) => {
             setPercentage(event.target.value);
         };
         return (
             <div>
-                <div style={{ marginLeft: '100px' }}>
-                    <HalfCircularProgressBar strokeWidth="10" sqSize="400" percentage={percentage} />
-                    <div>
-                        <input
-                            id="progressInput"
-                            type="range"
-                            min="0"
-                            max="100"
-                            step="1"
-                            value={percentage}
-                            onChange={handleChangeEvent}
-                        />
-                    </div>
+                <div style={{ marginLeft: '100px', marginTop: '50px' }}>
+                    <HalfCircularProgressBar strokeWidth="20" sqSize="400" percentage={percentage} />
+                
                 </div>
             </div>
         );
