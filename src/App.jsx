@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Bar></Bar>
-      {/* <FullCircle></FullCircle> */}
+      <FullCircle></FullCircle>
     </div>
   );
 };
